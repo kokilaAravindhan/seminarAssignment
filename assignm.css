@@ -1,0 +1,25 @@
+
+.box{
+    margin:60px;
+    background-color: rgb(140, 163, 207);
+}
+h1{
+    text-align: center;
+}
+
+#headtext{
+    text-align: center;
+}
+#numSeats{
+    padding-left: 185px;
+    align-content: start;
+}
+img{
+    height: 80%;
+    width: 80%;
+    align-items: right;
+}
+
+.col-sm-6{
+    align-items: center;
+}

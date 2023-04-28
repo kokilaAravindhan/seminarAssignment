@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assignm.css">
+    <title>Seminar Registration</title>
+       
+</head>
+<script>
+    function myFunction(a){
+        if(a=="1"){
+        alert("successfully Submited the form!!");}
+else{
+    alert("registration Got cancelled!!")
+}
+}
+    
+</script>
+<body>
+    <div class="box">
+        <div class="container">
+            <div class="row">
+                <div class ="col">
+                    <h1>Seminar Event</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                      <p id="headtext">Number Of Seats Available: 23</p>  
+                </div>
+            </div>
+            <div class="row" id="contentRow">
+                <div class="col-sm-6" >
+                   <!-- <i class="fa-solid fa-building-user fa-2xl"></i>                -->
+                   <img src="Semin.jpg" class="img-thumbnail" alt="Seminar" >
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label for="name" >
+                                <p padding="0px">Name :</p>
+                            </label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="nameTxt">
+                                <input type="text" size="25" maxlength="30" margin="0px"> 
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label for="email" >
+                                <p padding="0px">Email :</p>
+                            </label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="emailTxt">
+                                <input type="email" size="25" maxlength="30" margin="0px"> 
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label for="phNum" >
+                                <p padding="0px">Phone No. :</p>
+                            </label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="phNumTxt">
+                                <input type="tel" size="25"  margin="0px"> 
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label for="numOfSeats">
+                                <p padding="0px">Number 0f Seats:</p>
+                            </label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="numOfSeatsTxt">
+                                <select id="numSeats"   title="numSeats" margin="0px">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select> 
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label for="nameOfAttende">
+                                <p padding="0px">Name 0f Attendee 2:</p>
+                            </label>
+                        </div>
+                        <div class="col-sm-4">
+                            <label for="nameOfAttendeTxt">
+                                <input type="text" size="25px"  maxlength="30px" margin="0px"> 
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                        
+                                <button type="button" class="btn btn-secondary btn-lg" onclick="myFunction(1)">Submit</button>                         
+                        </div>
+                        <div class="col-sm-4">    
+                                <button type="button" class="btn btn-secondary btn-lg" onclick="myFunction(2)">Cancel</button>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
