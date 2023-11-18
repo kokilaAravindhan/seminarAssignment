@@ -15,8 +15,11 @@
 <script>
     function myFunction(a){
         if(a=="1"){
-        alert("successfully Submited the form!!");}
-else{
+        alert("successfully Submited the form!!");
+        var allInputs = document.querySelectorAll('input');
+         allInputs.forEach(singleInput => singleInput.value = '');
+        }
+else if (a=="2") {
     alert("registration Got cancelled!!")
 }
 }
@@ -32,9 +35,10 @@ else{
             </div>
             <div class="row">
                 <div class="col">
-                      <p id="headtext">Number Of Seats Available: 23</p>  
+                      <p id="headtext">Number Of Seats Available:23 </p>  
                 </div>
             </div>
+            <form>
             <div class="row" id="contentRow">
                 <div class="col-sm-6" >
                    <!-- <i class="fa-solid fa-building-user fa-2xl"></i>                -->
@@ -106,6 +110,7 @@ else{
                             </label>
                         </div>
                     </div>
+                </form>
                     <div class="row">
                         <div class="col-sm-4">
                         
